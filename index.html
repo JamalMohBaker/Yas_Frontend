@@ -155,6 +155,35 @@
             }
         }
     </style>
+    <style>
+        /* Ensure tab labels are visible on small screens and tabs are scrollable */
+        .quick-links .nav.nav-tabs {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            gap: .5rem;
+        }
+
+        .nav-link-custom span {
+            display: inline !important;
+        }
+
+        .quick-links .nav.nav-tabs .nave-item-custom {
+            flex: 0 0 auto;
+        }
+
+        @media (max-width:575.98px) {
+            .quick-links {
+                padding-left: .5rem;
+                padding-right: .5rem;
+            }
+
+            .nav-link-custom span {
+                font-size: .9rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -269,7 +298,7 @@
                                     </li>
                                 </ul>
 
-                                <ul class="navbar-nav quick-links d-none d-lg-flex align-items-center">
+                                <ul class="navbar-nav quick-links align-items-center">
                                     <!-- ------------------------------- -->
                                     <!-- start apps Dropdown -->
                                     <!-- ------------------------------- -->
