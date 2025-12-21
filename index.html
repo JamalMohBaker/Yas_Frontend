@@ -13,7 +13,7 @@
     <!-- Core Css -->
     <link rel="stylesheet" href="./assets/css/styles.css" />
 
-    <title>Spike Bootstrap Admin</title>
+    <title>RADARS MONITORING</title>
     <!-- jvectormap  -->
     <link rel="stylesheet" href="./assets/libs/jvectormap/jquery-jvectormap.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -363,7 +363,13 @@
             }
         }
     </style>
-   
+    <style>
+        .row{
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+        }
+       
+    </style>
 </head>
 
 <body>
@@ -388,11 +394,37 @@
             <!-- ---------------------------------- -->
             <!-- Start Vertical Layout Sidebar -->
             <!-- ---------------------------------- -->
-            <div class="brand-logo d-flex align-items-center justify-content-between">
-                <a href="./main/index.html" class="text-nowrap logo-img p-1 ">
-                    <img src="./assets/images/logos/logoCompany.png" class="dark-logo" alt="Logo-Dark" />
-                    <img src="./assets/images/logos/logoCompany.png" class="light-logo" alt="Logo-light" />
+            <!-- <div class="brand-logo d-flex align-items-center justify-content-between">
+                <div class=" d-flex align-items-center justify-content-between">
+                    <a href="./main/index.html" class="text-nowrap logo-img p-1 ">
+                        <img src="./assets/images/logos/logoCompany.png" width="50%" height="50%" class="dark-logo" alt="Logo-Dark" />
+                        <img src="./assets/images/logos/logoCompany.png" width="50%" height="50%" class="light-logo" alt="Logo-light" />
+                        <span style="margin-right: 50px;" >
+                            RADARS MONITORING
+                        </span>
+                    </a>
+                    
+                </div>
+
+                <a href="javascript:void(0)" class="sidebartoggler ms-auto text-decoration-none fs-5 d-block d-xl-none">
+                    <i class="ti ti-x"></i>
                 </a>
+            </div> -->
+            <div class="brand-logo d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                    <a href="./main/index.html" class="text-nowrap logo-img p-1 d-flex align-items-center text-decoration-none">
+                        <!-- إظهار صورة واحدة فقط في كل وضع -->
+                        <img src="./assets/images/logos/logoCompany.png" width="50" height="50"
+                            class="dark-logo d-dark-block d-light-none me-3" alt="Logo-Dark" />
+                        <img src="./assets/images/logos/logoCompany.png" width="50" height="50"
+                            class="light-logo d-light-block d-dark-none me-3" alt="Logo-light" />
+            
+                        <span class="fw-bold fs-5 text-dark mt-2">
+                            RADARS <br> MONITORING
+                        </span>
+                    </a>
+                </div>
+            
                 <a href="javascript:void(0)" class="sidebartoggler ms-auto text-decoration-none fs-5 d-block d-xl-none">
                     <i class="ti ti-x"></i>
                 </a>
@@ -457,7 +489,7 @@
             <!-- ---------------------------------- -->
         </aside>
         <!--  Sidebar End -->
-        <div class="page-wrapper">
+        <div class="page-wrapper bg-white">
 
 
 
@@ -470,7 +502,7 @@
                             <!-- ---------------------------------- -->
                             <!--  -->
 
-                            <nav class="navbar navbar-expand-lg p-1">
+                            <nav class="navbar navbar-expand-lg bg-white p-1">
                                 <ul class="navbar-nav">
                                     <li class="nav-item nav-icon-hover-bg rounded-circle">
                                         <a class="nav-link sidebartoggler" id="headerCollapse"
@@ -481,7 +513,7 @@
                                 </ul>
 
                                 <div class="tabs-container mx-3 flex-grow-1">
-                                    <ul class="nav nav-tabs border-0" id="main-tabs">
+                                    <ul class="nav nav-tabs border-0 " id="main-tabs">
                                         <li class="nav-item position-relative">
                                             <a class="nav-link active d-flex align-items-center" data-bs-toggle="tab" href="#main" role="tab">
                                                 <iconify-icon icon="fa-solid:map-marked" width="1em" height="1em" class="me-1"></iconify-icon>
@@ -1039,7 +1071,7 @@
 
                                             <div class="table-responsive container-fluid" style="max-height: 200px;">
                                                 <table id="multi_col_order"
-                                                    class="table table-striped table-bordered display text-nowrap">
+                                                    class="table  table-bordered display text-nowrap table-hover">
                                                     <thead>
                                                         <!-- start row -->
                                                         <tr>
@@ -1195,7 +1227,7 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td>4</td>
+                                                            <td>5</td>
                                                             <td>85645</td>
                                                             <td>null</td>
                                                             <td>Qatar</td>
@@ -1229,7 +1261,7 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td>4</td>
+                                                            <td>6</td>
                                                             <td>85645</td>
                                                             <td>null</td>
                                                             <td>Qatar</td>
@@ -1263,7 +1295,7 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td>4</td>
+                                                            <td>7</td>
                                                             <td>85645</td>
                                                             <td>null</td>
                                                             <td>Qatar</td>
@@ -1297,7 +1329,7 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td>4</td>
+                                                            <td>8</td>
                                                             <td>85645</td>
                                                             <td>null</td>
                                                             <td>Qatar</td>
@@ -1331,7 +1363,7 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td>4</td>
+                                                            <td>9</td>
                                                             <td>85645</td>
                                                             <td>null</td>
                                                             <td>Qatar</td>
@@ -1365,7 +1397,177 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td>4</td>
+                                                            <td>10</td>
+                                                            <td>85645</td>
+                                                            <td>null</td>
+                                                            <td>Qatar</td>
+                                                            <td>None</td>
+                                                            <td>COMMON</td>
+                                                            <td>[56.335521,25.331936]</td>
+                                                            <td>15/12/2025 09:12:00</td>
+                                                            <td class="text-center align-middle">
+                                                                <a href="./assets/images/logos/car.jpeg"
+                                                                    class="d-inline-flex align-items-center justify-content-center preview-photo">
+                                                                    <i class="fas fa-image"></i>
+                                                                </a>
+                                                            </td>
+                                                            <td>Reported</td>
+                                                            <td>
+                                                                <div>
+                                                                    <a href="#" data-bs-toggle="modal"
+                                                                        data-bs-target="#vertical-center-modal"
+                                                                        class="btn btn-sm bg-primary-subtle text-primary">
+                                                                        <i class="fas fa-eye"></i>
+                                                                    </a>
+                                                                    <a href="#" class="btn btn-sm bg-info-subtle text-info">
+                                                                        <i class="fas fa-edit"></i>
+                                                                    </a>
+                                                                    <a href="#"
+                                                                        class="btn btn-sm bg-danger-subtle text-danger">
+                                                                        <i class="fas fa-trash-alt"></i>
+                                                                    </a>
+
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>11</td>
+                                                            <td>85645</td>
+                                                            <td>null</td>
+                                                            <td>Qatar</td>
+                                                            <td>None</td>
+                                                            <td>COMMON</td>
+                                                            <td>[56.335521,25.331936]</td>
+                                                            <td>15/12/2025 09:12:00</td>
+                                                            <td class="text-center align-middle">
+                                                                <a href="./assets/images/logos/car.jpeg"
+                                                                    class="d-inline-flex align-items-center justify-content-center preview-photo">
+                                                                    <i class="fas fa-image"></i>
+                                                                </a>
+                                                            </td>
+                                                            <td>Reported</td>
+                                                            <td>
+                                                                <div>
+                                                                    <a href="#" data-bs-toggle="modal"
+                                                                        data-bs-target="#vertical-center-modal"
+                                                                        class="btn btn-sm bg-primary-subtle text-primary">
+                                                                        <i class="fas fa-eye"></i>
+                                                                    </a>
+                                                                    <a href="#" class="btn btn-sm bg-info-subtle text-info">
+                                                                        <i class="fas fa-edit"></i>
+                                                                    </a>
+                                                                    <a href="#"
+                                                                        class="btn btn-sm bg-danger-subtle text-danger">
+                                                                        <i class="fas fa-trash-alt"></i>
+                                                                    </a>
+
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>12</td>
+                                                            <td>85645</td>
+                                                            <td>null</td>
+                                                            <td>Qatar</td>
+                                                            <td>None</td>
+                                                            <td>COMMON</td>
+                                                            <td>[56.335521,25.331936]</td>
+                                                            <td>15/12/2025 09:12:00</td>
+                                                            <td class="text-center align-middle">
+                                                                <a href="./assets/images/logos/car.jpeg"
+                                                                    class="d-inline-flex align-items-center justify-content-center preview-photo">
+                                                                    <i class="fas fa-image"></i>
+                                                                </a>
+                                                            </td>
+                                                            <td>Reported</td>
+                                                            <td>
+                                                                <div>
+                                                                    <a href="#" data-bs-toggle="modal"
+                                                                        data-bs-target="#vertical-center-modal"
+                                                                        class="btn btn-sm bg-primary-subtle text-primary">
+                                                                        <i class="fas fa-eye"></i>
+                                                                    </a>
+                                                                    <a href="#" class="btn btn-sm bg-info-subtle text-info">
+                                                                        <i class="fas fa-edit"></i>
+                                                                    </a>
+                                                                    <a href="#"
+                                                                        class="btn btn-sm bg-danger-subtle text-danger">
+                                                                        <i class="fas fa-trash-alt"></i>
+                                                                    </a>
+
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>13</td>
+                                                            <td>85645</td>
+                                                            <td>null</td>
+                                                            <td>Qatar</td>
+                                                            <td>None</td>
+                                                            <td>COMMON</td>
+                                                            <td>[56.335521,25.331936]</td>
+                                                            <td>15/12/2025 09:12:00</td>
+                                                            <td class="text-center align-middle">
+                                                                <a href="./assets/images/logos/car.jpeg"
+                                                                    class="d-inline-flex align-items-center justify-content-center preview-photo">
+                                                                    <i class="fas fa-image"></i>
+                                                                </a>
+                                                            </td>
+                                                            <td>Reported</td>
+                                                            <td>
+                                                                <div>
+                                                                    <a href="#" data-bs-toggle="modal"
+                                                                        data-bs-target="#vertical-center-modal"
+                                                                        class="btn btn-sm bg-primary-subtle text-primary">
+                                                                        <i class="fas fa-eye"></i>
+                                                                    </a>
+                                                                    <a href="#" class="btn btn-sm bg-info-subtle text-info">
+                                                                        <i class="fas fa-edit"></i>
+                                                                    </a>
+                                                                    <a href="#"
+                                                                        class="btn btn-sm bg-danger-subtle text-danger">
+                                                                        <i class="fas fa-trash-alt"></i>
+                                                                    </a>
+
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>14</td>
+                                                            <td>85645</td>
+                                                            <td>null</td>
+                                                            <td>Qatar</td>
+                                                            <td>None</td>
+                                                            <td>COMMON</td>
+                                                            <td>[56.335521,25.331936]</td>
+                                                            <td>15/12/2025 09:12:00</td>
+                                                            <td class="text-center align-middle">
+                                                                <a href="./assets/images/logos/car.jpeg"
+                                                                    class="d-inline-flex align-items-center justify-content-center preview-photo">
+                                                                    <i class="fas fa-image"></i>
+                                                                </a>
+                                                            </td>
+                                                            <td>Reported</td>
+                                                            <td>
+                                                                <div>
+                                                                    <a href="#" data-bs-toggle="modal"
+                                                                        data-bs-target="#vertical-center-modal"
+                                                                        class="btn btn-sm bg-primary-subtle text-primary">
+                                                                        <i class="fas fa-eye"></i>
+                                                                    </a>
+                                                                    <a href="#" class="btn btn-sm bg-info-subtle text-info">
+                                                                        <i class="fas fa-edit"></i>
+                                                                    </a>
+                                                                    <a href="#"
+                                                                        class="btn btn-sm bg-danger-subtle text-danger">
+                                                                        <i class="fas fa-trash-alt"></i>
+                                                                    </a>
+
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>15</td>
                                                             <td>85645</td>
                                                             <td>null</td>
                                                             <td>Qatar</td>
